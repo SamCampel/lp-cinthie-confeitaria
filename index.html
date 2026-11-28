@@ -1,306 +1,406 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Cinthiê Confeitaria | Bolos e doces no Tatuapé, SP</title>
-<meta name="description" content="Bolos, brownies e doces feitos com carinho no Tatuapé, São Paulo. Encomende pelo WhatsApp e receba atendimento atencioso.">
-<meta property="og:title" content="Cinthiê Confeitaria | Tatuapé, SP">
-<meta property="og:description" content="Bolos e doces sob encomenda no Tatuapé. Peça pelo WhatsApp.">
-<meta property="og:image" content="https://lp-cinthie-confeitaria.vercel.app/fotos/hero.webp">
-<link rel="canonical" href="https://lp-cinthie-confeitaria.vercel.app/">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300..700&family=Fraunces:ital,opsz,wght,SOFT@0,9..144,400..600,100;1,9..144,400,100&family=Figtree:wght@400..700&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&text=feito%C3%A0m%20&display=swap" rel="stylesheet">
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Bakery","name":"Cinthiê Confeitaria","telephone":"+55-11-93935-9449","address":{"@type":"PostalAddress","streetAddress":"R. Cesário Galero, 262","addressLocality":"São Paulo","addressRegion":"SP","postalCode":"03071-000","addressCountry":"BR"}}
-</script>
-<style>
-:root{
-  --morango:#C8283E; --calda:#8E1B2C; --cacau:#3A1F1A;
-  --chantilly:#FFF7F3; --rosa:#F7D6DA; --folha:#2F6B4F;
-  --txt:#2A1714; --txt-suave:#5E4540;
-  --raio:18px; --vitrine:#16100E; --ouro:#C9A24B; --ouro-claro:#E8CF8E;
-}
-*{box-sizing:border-box;margin:0}
-html{scroll-behavior:smooth}
-body{font-family:Figtree,system-ui,sans-serif;-webkit-font-smoothing:antialiased;font-size:clamp(1.0625rem,1rem + .2vw,1.125rem);line-height:1.65;color:var(--txt);background:var(--chantilly)}
-h1,h2,h3{font-family:"Outfit",system-ui,sans-serif;font-weight:600;line-height:1.05;letter-spacing:-.025em;text-wrap:balance}
-h3,.sub{font-family:"Outfit",system-ui,sans-serif;font-weight:400;letter-spacing:0;color:var(--txt-suave)}
-h3{color:var(--cacau);font-weight:600}
-.mao{font-family:Caveat,cursive;font-weight:600;font-size:1.6em;line-height:1;color:var(--rosa);display:inline-block;transform:rotate(-4deg)}
-p{text-wrap:pretty;max-width:62ch}
-a{color:inherit}
-.wrap{width:min(1180px,100% - 2.5rem);margin-inline:auto}
-section{padding:clamp(3.5rem,8vw,6.5rem) 0;scroll-margin-top:72px}
-svg.i{width:1.25em;height:1.25em;fill:currentColor}
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cinthiê Confeitaria | Bolos e doces no Tatuapé, SP</title>
+    <meta
+      name="description"
+      content="Bolos, brownies e doces feitos com carinho no Tatuapé, São Paulo. Encomende pelo WhatsApp e receba atendimento atencioso."
+    />
+    <meta property="og:title" content="Cinthiê Confeitaria | Tatuapé, SP" />
+    <meta
+      property="og:description"
+      content="Bolos e doces sob encomenda no Tatuapé. Peça pelo WhatsApp."
+    />
+    <meta property="og:image" content="https://lp-cinthie-confeitaria.vercel.app/fotos/hero.webp" />
+    <link rel="canonical" href="https://lp-cinthie-confeitaria.vercel.app/" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300..700&family=Fraunces:ital,opsz,wght,SOFT@0,9..144,400..600,100;1,9..144,400,100&family=Figtree:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&text=feito%C3%A0m%20&display=swap"
+      rel="stylesheet"
+    />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Bakery",
+        "name": "Cinthiê Confeitaria",
+        "telephone": "+55-11-93935-9449",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "R. Cesário Galero, 262",
+          "addressLocality": "São Paulo",
+          "addressRegion": "SP",
+          "postalCode": "03071-000",
+          "addressCountry": "BR"
+        }
+      }
+    </script>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <svg width="0" height="0" style="position: absolute" aria-hidden="true">
+      <symbol id="wa" viewBox="0 0 24 24">
+        <path
+          d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.3.1-.2 0-.3 0-.5l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.6 4c1.7.7 2.3.8 3.2.6.5 0 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2l-.5-.3Z"
+        />
+      </symbol>
+      <symbol id="ig" viewBox="0 0 24 24">
+        <path
+          d="M12 7.3a4.7 4.7 0 1 0 0 9.4 4.7 4.7 0 0 0 0-9.4Zm0 7.7a3 3 0 1 1 0-6 3 3 0 0 1 0 6Zm6-7.9a1.1 1.1 0 1 1-2.2 0 1.1 1.1 0 0 1 2.2 0ZM12 3.6c2.7 0 3 0 4.1.1 2.7.1 4 1.4 4.1 4.1.1 1 .1 1.4.1 4.1s0 3-.1 4.1c-.1 2.7-1.4 4-4.1 4.1-1 .1-1.4.1-4.1.1s-3 0-4.1-.1c-2.7-.1-4-1.4-4.1-4.1-.1-1-.1-1.4-.1-4.1s0-3 .1-4.1c.1-2.7 1.4-4 4.1-4.1 1-.1 1.4-.1 4.1-.1ZM12 2c-2.7 0-3.1 0-4.1.1C4.2 2.2 2.2 4.2 2.1 7.9 2 8.9 2 9.3 2 12s0 3.1.1 4.1c.1 3.7 2.1 5.7 5.8 5.8 1 .1 1.4.1 4.1.1s3.1 0 4.1-.1c3.7-.1 5.7-2.1 5.8-5.8.1-1 .1-1.4.1-4.1s0-3.1-.1-4.1c-.1-3.7-2.1-5.7-5.8-5.8C15.1 2 14.7 2 12 2Z"
+        />
+      </symbol>
+      <symbol id="seta" viewBox="0 0 24 24">
+        <path d="M13.2 5.3 20 12l-6.8 6.7-1.4-1.4 4.3-4.3H4v-2h12.1l-4.3-4.3z" />
+      </symbol>
+      <symbol id="cor" viewBox="0 0 24 24">
+        <path
+          d="M12 21s-7.5-4.6-9.4-9.3C1.2 8.2 3.4 4.5 7 4.5c2 0 3.5 1.1 5 2.8 1.5-1.7 3-2.8 5-2.8 3.6 0 5.8 3.7 4.4 7.2C19.5 16.4 12 21 12 21Z"
+        />
+      </symbol>
+      <symbol id="pin" viewBox="0 0 24 24">
+        <path
+          d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z"
+        />
+      </symbol>
+      <symbol id="bolo" viewBox="0 0 24 24">
+        <path
+          d="M12 2c.8 0 1.5.9 1.5 2S12.8 6 12 6s-1.5-.9-1.5-2S11.2 2 12 2Zm-1 5h2v3h5a3 3 0 0 1 3 3v1.5c-1 0-1.5.8-2.5.8s-1.5-.8-2.5-.8-1.5.8-2.5.8-1.5-.8-2.5-.8-1.5.8-2.5.8S5 14.5 4 14.5H3V13a3 3 0 0 1 3-3h5V7Zm-8 9.3c.9.3 1.6-.5 2.5-.5s1.5.8 2.5.8 1.5-.8 2.5-.8 1.5.8 2.5.8 1.5-.8 2.5-.8 1.6.8 2.5.5V22H3z"
+        />
+      </symbol>
+    </svg>
 
-/* topo */
-header{position:sticky;top:0;z-index:20;background:var(--vitrine);color:#f6efe6;border-bottom:1px solid rgba(201,162,75,.35)}
-header .marca{color:var(--ouro-claro)}
-header nav a:hover{color:var(--ouro-claro)}
-header .menu-btn{border-color:var(--ouro);color:var(--ouro-claro)}
-nav.aberto ul{background:var(--vitrine)!important;border-bottom-color:rgba(201,162,75,.35)!important}
-.topo{display:flex;align-items:stretch;justify-content:space-between;min-height:64px;gap:1rem}
-.marca{font-family:"Outfit",system-ui,sans-serif;font-size:1.35rem;text-decoration:none;color:var(--calda)}
-nav{align-self:center}.social{align-self:center}
-nav ul{list-style:none;display:none;gap:1.75rem;padding:0}
-nav a{text-decoration:none;font-weight:600}
-nav a:hover{color:var(--morango)}
-.menu-btn{min-height:44px;min-width:44px;border:1.5px solid var(--cacau);border-radius:50%;background:none;cursor:pointer}
-nav.aberto ul{display:flex;flex-direction:column;position:absolute;inset:64px 0 auto;background:var(--chantilly);padding:1.25rem 1.25rem 1.5rem;border-bottom:1px solid var(--rosa)}
-.social{display:flex;gap:.5rem}
-.social a{display:grid;place-items:center;width:44px;height:44px;border:1.5px solid currentColor;border-radius:50%}
-@media(min-width:800px){nav ul{display:flex}.menu-btn{display:none}}
-
-/* botões */
-.btn{display:inline-flex;align-items:center;gap:.75rem;min-height:48px;padding:.4rem .5rem .4rem 1.4rem;border-radius:999px;font-weight:700;text-decoration:none;transition:transform .2s,box-shadow .2s,background .2s,color .2s;border:0;cursor:pointer;font:inherit;font-weight:700}
-.btn .bola{display:grid;place-items:center;width:38px;height:38px;flex:none;border-radius:50%;background:rgba(255,255,255,.2);color:#fff}
-.btn .bola svg{fill:#fff}
-.btn-1{background:linear-gradient(135deg,var(--morango),var(--calda));color:#fff;box-shadow:0 8px 22px -10px var(--calda)}
-.btn-1:hover{transform:translateY(-2px);box-shadow:0 12px 26px -10px var(--calda)}
-.btn-1:active{transform:none}
-.btn-2{background:none;border:1.5px solid var(--cacau);color:var(--cacau);padding:.4rem 1.4rem}
-.btn-2:hover{background:var(--cacau);color:var(--chantilly)}
-.btn-3{color:var(--calda);font-weight:700;text-decoration:underline;text-underline-offset:4px}
-.btn:focus-visible,a:focus-visible,button:focus-visible{outline:3px solid var(--folha);outline-offset:3px}
-.escuro .btn-1{background:linear-gradient(135deg,#fff,var(--rosa));color:var(--cacau)}
-.escuro .btn-1 .bola{background:var(--morango);color:#fff}
-
-/* hero: a vitrine preta e dourada da fachada da loja */
-.hero{padding:0;color:#f6efe6;position:relative;overflow:hidden;background:radial-gradient(70% 90% at 10% 100%,rgba(200,40,62,.38),transparent 60%),radial-gradient(60% 70% at 0% 0%,rgba(142,27,44,.55),transparent 65%),linear-gradient(160deg,#3a141b 0%,#24100f 45%,var(--vitrine) 100%)}
-.hero::after{content:"";position:absolute;inset:0;opacity:.07;pointer-events:none;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence baseFrequency='.85'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)'/%3E%3C/svg%3E")}
-.hero-grid{display:grid;min-height:min(88vh,760px)}
-.hero-foto{position:relative;min-height:56vh}
-.hero-foto img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 45%}
-.hero-foto::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 50%,#2c1215)}
-.hero-txt{position:relative;z-index:1;padding:0 1.25rem 3rem;margin-top:-4.5rem;text-align:center}
-.placa{display:inline-flex;flex-direction:column;align-items:center;gap:.1rem;padding:0;text-decoration:none;align-self:center;align-items:flex-start}
-.placa b{font-family:"Outfit",system-ui,sans-serif;font-weight:500;font-size:1.15rem;color:var(--ouro-claro);line-height:1}
-.placa small{font-size:.5625rem;letter-spacing:.22em;text-transform:uppercase;color:var(--ouro)}
-.hero h1{font-family:"Fraunces",Georgia,serif;font-size:clamp(2.6rem,1.4rem + 5vw,5rem);color:#fff;font-weight:520;font-variation-settings:"SOFT" 100,"opsz" 144;letter-spacing:-.015em;}
-.hero h1 em{font-style:italic;font-weight:400;color:#ffd9de}
-.hero p.sub{margin:1rem auto 2rem;color:#e6d6d2;font-size:clamp(1.15rem,1rem + .5vw,1.35rem);line-height:1.45;font-weight:380}
-.acoes{display:flex;flex-wrap:wrap;justify-content:center;gap:.75rem}
-.acoes .btn{flex:1 1 auto;justify-content:center;white-space:nowrap;padding-inline:1.1rem .45rem}
-.acoes .btn-1{justify-content:space-between}
-.hero .btn-2{border-color:rgba(255,255,255,.55);color:#fff;padding-inline:1.1rem}
-.hero .btn-2:hover{background:#fff;color:var(--cacau)}
-@media(max-width:340px){.acoes .btn{flex-basis:100%}}
-@media(min-width:900px){
-  .hero-grid{grid-template-columns:1fr 1.05fr;align-items:stretch}
-  .hero-txt{margin:0;padding:4rem clamp(1.5rem,5vw,5rem);display:flex;flex-direction:column;justify-content:center;align-items:flex-start;text-align:left}
-  .hero p{margin-inline:0}.acoes{justify-content:flex-start}.acoes .btn{flex:0 0 auto}
-  .hero-foto{order:2;min-height:auto}
-  .hero-foto::after{background:linear-gradient(90deg,#2a1214 0%,rgba(42,18,20,.35) 22%,transparent 45%)}
-}
-@media(prefers-reduced-motion:no-preference){
-  .hero-foto img{animation:zoom 1.4s cubic-bezier(.2,.7,.2,1) both}
-  @keyframes zoom{from{transform:scale(1.08);opacity:.4}}
-}
-/* diferenciais */
-.faixa{background:var(--cacau);color:var(--chantilly);padding:1.6rem 0;position:relative}
-.faixa::after{content:"";position:absolute;inset:0;opacity:.08;pointer-events:none;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence baseFrequency='.9'/%3E%3C/filter%3E%3Crect width='120' height='120' filter='url(%23n)'/%3E%3C/svg%3E")}
-.faixa ul{list-style:none;padding:0;display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr))}
-.faixa li svg{fill:var(--ouro)}
-.faixa li{display:flex;gap:.7rem;align-items:center;font-weight:600}
-
-/* produtos */
-.produtos{background:var(--chantilly)}
-.produtos h2,.sobre h2,.final h2,.galeria h2{font-size:clamp(2.1rem,1.4rem + 2.8vw,3.4rem);color:var(--cacau)}
-.produtos h2::after,.galeria h2::after{content:"";display:block;width:48px;height:2px;background:var(--ouro);margin-top:.9rem}
-.intro{margin:.8rem 0 2.5rem;font-size:clamp(1.15rem,1rem + .4vw,1.3rem)}
-.grade{display:grid;gap:1.25rem;grid-template-columns:repeat(2,1fr)}
-@media(max-width:359px){.grade{grid-template-columns:1fr}}
-@media(min-width:1000px){.grade{grid-template-columns:repeat(4,1fr)}}
-.item{background:#fff;border-radius:var(--raio);overflow:hidden;display:flex;flex-direction:column}
-.item:nth-child(2){background:var(--rosa)}
-.item .ph{display:block;padding:0!important;width:100%;height:auto;object-fit:cover;aspect-ratio:4/5;background:linear-gradient(150deg,var(--rosa),#e9a7b0);display:grid;place-items:center;color:var(--calda);font-size:.875rem;font-weight:600;text-align:center;padding:1rem}
-.item:nth-child(3) .ph{background:linear-gradient(150deg,#7a4a3a,var(--cacau));color:var(--rosa)}
-.item div.txt{padding:1rem 1.1rem 1.3rem;display:flex;flex-direction:column;gap:.6rem;flex:1}
-.item h3{font-size:clamp(1.15rem,1rem + .5vw,1.4rem)}
-.item .btn-3{margin-top:auto;font-size:.95rem}
-
-/* galeria */
-.galeria{background:#fff;padding-bottom:clamp(3rem,7vw,5rem)}
-.trilho{display:grid;grid-auto-flow:column;grid-auto-columns:min(72%,300px);gap:1rem;overflow-x:auto;scroll-snap-type:x mandatory;padding:2rem max(1.25rem,calc((100% - 1180px)/2)) .5rem;scroll-padding-inline:1.25rem;scrollbar-width:thin}
-.trilho figure{scroll-snap-align:start;margin:0}
-.trilho img{width:100%;height:auto;aspect-ratio:3/4;object-fit:cover;border-radius:var(--raio);display:block}
-.trilho figcaption{font-family:"Outfit",system-ui,sans-serif;font-weight:450;font-size:1.2rem;color:var(--cacau);margin-top:.7rem}
-@media(min-width:900px){.trilho{grid-auto-flow:row;grid-template-columns:repeat(3,1fr);overflow:visible}.trilho figure:nth-child(even){margin-top:3rem}}
-/* sobre */
-.sobre{background:var(--rosa)}
-.sobre .wrap{display:grid;gap:2rem}
-.pend{display:inline-block;background:#fff;border:1.5px dashed var(--calda);color:var(--calda);border-radius:10px;padding:.35rem .7rem;font-size:.875rem;font-weight:600}
-@media(min-width:900px){.sobre .wrap{grid-template-columns:1fr 1fr;align-items:center}}
-
-/* passos */
-.passos ol{padding:0;list-style:none;display:grid;gap:1.25rem;grid-template-columns:repeat(auto-fit,minmax(min(100%,270px),1fr));counter-reset:p}
-.passos li{counter-increment:p;padding-top:1rem;border-top:2px solid var(--morango)}
-
-.passos h3{font-size:1.35rem;margin-bottom:.35rem}
-.passos p{color:var(--txt);font-size:1.0625rem}
-.nota{display:block;margin-top:.35rem;font-size:.875rem;color:var(--txt-suave);font-style:italic}
-.passos li::before{content:counter(p);font-family:"Outfit",system-ui,sans-serif;font-size:2.2rem;color:var(--morango);display:block}
-
-/* final */
-.final{background:linear-gradient(160deg,var(--calda),var(--cacau));color:var(--chantilly);text-align:center;position:relative}
-.final h2{color:#fff}
-.final p{margin:1rem auto 2rem;opacity:.9}
-
-footer{background:var(--vitrine);color:var(--rosa);padding:3rem 0 calc(3rem + env(safe-area-inset-bottom));font-size:.95rem}
-footer .wrap{display:grid;gap:2rem;grid-template-columns:repeat(auto-fit,minmax(min(100%,200px),1fr))}
-footer h3{font-family:Figtree,sans-serif;font-size:.875rem;letter-spacing:.08em;text-transform:uppercase;color:var(--ouro-claro);margin-bottom:.6rem}
-footer ul{list-style:none;padding:0;display:grid;gap:.35rem}
-
-.flutua{position:fixed;right:calc(1rem + env(safe-area-inset-right));bottom:calc(1rem + env(safe-area-inset-bottom));z-index:30;width:58px;height:58px;border-radius:50%;display:grid;place-items:center;background:#1f9d55;color:#fff;box-shadow:0 10px 24px -8px rgba(0,0,0,.4)}
-.flutua svg{width:30px;height:30px;fill:#fff}
-
-@media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important;scroll-behavior:auto!important}}
-@media(hover:none){.btn-1:hover{transform:none}}
-</style>
-</head>
-<body>
-<svg width="0" height="0" style="position:absolute" aria-hidden="true">
-  <symbol id="wa" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.3.1-.2 0-.3 0-.5l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.6 4c1.7.7 2.3.8 3.2.6.5 0 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2l-.5-.3Z"/></symbol>
-  <symbol id="ig" viewBox="0 0 24 24"><path d="M12 7.3a4.7 4.7 0 1 0 0 9.4 4.7 4.7 0 0 0 0-9.4Zm0 7.7a3 3 0 1 1 0-6 3 3 0 0 1 0 6Zm6-7.9a1.1 1.1 0 1 1-2.2 0 1.1 1.1 0 0 1 2.2 0ZM12 3.6c2.7 0 3 0 4.1.1 2.7.1 4 1.4 4.1 4.1.1 1 .1 1.4.1 4.1s0 3-.1 4.1c-.1 2.7-1.4 4-4.1 4.1-1 .1-1.4.1-4.1.1s-3 0-4.1-.1c-2.7-.1-4-1.4-4.1-4.1-.1-1-.1-1.4-.1-4.1s0-3 .1-4.1c.1-2.7 1.4-4 4.1-4.1 1-.1 1.4-.1 4.1-.1ZM12 2c-2.7 0-3.1 0-4.1.1C4.2 2.2 2.2 4.2 2.1 7.9 2 8.9 2 9.3 2 12s0 3.1.1 4.1c.1 3.7 2.1 5.7 5.8 5.8 1 .1 1.4.1 4.1.1s3.1 0 4.1-.1c3.7-.1 5.7-2.1 5.8-5.8.1-1 .1-1.4.1-4.1s0-3.1-.1-4.1c-.1-3.7-2.1-5.7-5.8-5.8C15.1 2 14.7 2 12 2Z"/></symbol>
-  <symbol id="seta" viewBox="0 0 24 24"><path d="M13.2 5.3 20 12l-6.8 6.7-1.4-1.4 4.3-4.3H4v-2h12.1l-4.3-4.3z"/></symbol>
-  <symbol id="cor" viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-9.4-9.3C1.2 8.2 3.4 4.5 7 4.5c2 0 3.5 1.1 5 2.8 1.5-1.7 3-2.8 5-2.8 3.6 0 5.8 3.7 4.4 7.2C19.5 16.4 12 21 12 21Z"/></symbol>
-  <symbol id="pin" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z"/></symbol>
-  <symbol id="bolo" viewBox="0 0 24 24"><path d="M12 2c.8 0 1.5.9 1.5 2S12.8 6 12 6s-1.5-.9-1.5-2S11.2 2 12 2Zm-1 5h2v3h5a3 3 0 0 1 3 3v1.5c-1 0-1.5.8-2.5.8s-1.5-.8-2.5-.8-1.5.8-2.5.8-1.5-.8-2.5-.8-1.5.8-2.5.8S5 14.5 4 14.5H3V13a3 3 0 0 1 3-3h5V7Zm-8 9.3c.9.3 1.6-.5 2.5-.5s1.5.8 2.5.8 1.5-.8 2.5-.8 1.5.8 2.5.8 1.5-.8 2.5-.8 1.6.8 2.5.5V22H3z"/></symbol>
-</svg>
-
-<header>
-  <div class="wrap topo">
-    <a class="placa" href="#inicio" aria-label="Cinthiê Confeitaria, voltar ao início"><b>Cinthiê</b><small>Confeitaria</small></a>
-    <nav id="nav" aria-label="Principal">
-      <ul id="menu">
-        <li><a href="#doces">Doces</a></li>
-        <li><a href="#vitrine">Vitrine</a></li>
-        <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#pedir">Como pedir</a></li>
-        <li><a href="#contato">Contato</a></li>
-      </ul>
-    </nav>
-    <div class="social">
-      <button class="menu-btn" aria-expanded="false" aria-controls="menu" aria-label="Abrir menu">☰</button>
-    </div>
-  </div>
-</header>
-
-<main>
-<section class="hero" id="inicio">
-  <div class="hero-grid">
-    <div class="hero-foto">
-      <img src="fotos/hero.webp" width="640" height="831" fetchpriority="high" alt="Doce de pote com creme verde, calda de morango e granulado">
-    </div>
-    <div class="hero-txt">
-      <p class="mao" aria-hidden="true" style="margin:0 0 .3rem">feito à mão</p>
-      <h1>Doce na <em>medida</em> certa</h1>
-      <p class="sub">Bolos, brownies e doces feitos com carinho, na Rua Cesário Galero, no Tatuapé.</p>
-      <div class="acoes">
-        <a class="btn btn-1" href="https://wa.me/5511939359449?text=Ol%C3%A1%2C%20Cinthi%C3%AA!%20Quero%20fazer%20uma%20encomenda." aria-label="Encomendar pelo WhatsApp">Encomendar <span class="bola"><svg class="i" aria-hidden="true"><use href="#wa"/></svg></span></a>
-        <a class="btn btn-2" href="#doces">Ver doces</a>
+    <header>
+      <div class="wrap topo">
+        <a class="placa" href="#inicio" aria-label="Cinthiê Confeitaria, voltar ao início"
+          ><b>Cinthiê</b><small>Confeitaria</small></a
+        >
+        <nav id="nav" aria-label="Principal">
+          <ul id="menu">
+            <li><a href="#doces">Doces</a></li>
+            <li><a href="#vitrine">Vitrine</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#pedir">Como pedir</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </nav>
+        <div class="social">
+          <button
+            class="menu-btn"
+            aria-expanded="false"
+            aria-controls="menu"
+            aria-label="Abrir menu"
+          >
+            ☰
+          </button>
+        </div>
       </div>
-    </div>
-  </div>
-</section>
+    </header>
 
-<div class="faixa" aria-label="Diferenciais">
-  <div class="wrap"><ul>
-    <li><svg class="i" aria-hidden="true"><use href="#cor"/></svg>Nota 5,0 no Google</li>
-    <li><svg class="i" aria-hidden="true"><use href="#bolo"/></svg>Bolos sob encomenda</li>
-    <li><svg class="i" aria-hidden="true"><use href="#pin"/></svg>No Tatuapé, São Paulo</li>
-  </ul></div>
-</div>
+    <main>
+      <section class="hero" id="inicio">
+        <div class="hero-grid">
+          <div class="hero-foto">
+            <img
+              src="fotos/hero.webp"
+              width="640"
+              height="831"
+              fetchpriority="high"
+              alt="Doce de pote com creme verde, calda de morango e granulado"
+            />
+          </div>
+          <div class="hero-txt">
+            <p class="mao" aria-hidden="true" style="margin: 0 0 0.3rem">feito à mão</p>
+            <h1>Doce na <em>medida</em> certa</h1>
+            <p class="sub">
+              Bolos, brownies e doces feitos com carinho, na Rua Cesário Galero, no Tatuapé.
+            </p>
+            <div class="acoes">
+              <a
+                class="btn btn-1"
+                href="https://wa.me/5511939359449?text=Ol%C3%A1%2C%20Cinthi%C3%AA!%20Quero%20fazer%20uma%20encomenda."
+                aria-label="Encomendar pelo WhatsApp"
+                >Encomendar
+                <span class="bola"
+                  ><svg class="i" aria-hidden="true"><use href="#wa" /></svg></span
+              ></a>
+              <a class="btn btn-2" href="#doces">Ver doces</a>
+            </div>
+          </div>
+        </div>
+      </section>
 
-<section class="produtos" id="doces">
-  <div class="wrap">
-    <h2>O que sai do nosso forno</h2>
-    <p class="intro sub">Alguns dos doces da vitrine. Pergunte pelo cardápio completo no WhatsApp.</p>
-    <div class="grade">
-      <article class="item">
-        <img class="ph" src="fotos/morango.webp" width="480" height="853" loading="lazy" decoding="async" alt="Doce de morango com calda vermelha servido em pote">
-        <div class="txt"><h3>Doce de morango</h3>
-          <a class="btn-3" href="https://wa.me/5511939359449?text=Ol%C3%A1!%20Quero%20encomendar%20o%20Doce%20de%20morango.">Encomendar →</a></div>
-      </article>
-      <article class="item">
-        <img class="ph" src="fotos/bombom.webp" width="480" height="624" loading="lazy" decoding="async" alt="Morango inteiro coberto com creme verde, cortado ao meio">
-        <div class="txt"><h3>Morango recheado</h3>
-          <a class="btn-3" href="https://wa.me/5511939359449?text=Ol%C3%A1!%20Quero%20encomendar%20o%20Morango%20recheado.">Encomendar →</a></div>
-      </article>
-      <article class="item">
-        <img class="ph" src="fotos/brownie.webp" width="480" height="640" loading="lazy" decoding="async" alt="Fatia de brownie servida em prato branco">
-        <div class="txt"><h3>Brownie</h3>
-          <a class="btn-3" href="https://wa.me/5511939359449?text=Ol%C3%A1!%20Quero%20encomendar%20brownie.">Encomendar →</a></div>
-      </article>
-      <article class="item">
-        <img class="ph" src="fotos/vitrine.webp" width="520" height="693" loading="lazy" decoding="async" alt="Bolos caseiros e rosquinha na vitrine refrigerada">
-        <div class="txt"><h3>Bolos da vitrine</h3>
-          <a class="btn-3" href="https://wa.me/5511939359449?text=Ol%C3%A1!%20Quero%20saber%20dos%20bolos%20da%20vitrine.">Encomendar →</a></div>
-      </article>
-    </div>
-  </div>
-</section>
+      <div class="faixa" aria-label="Diferenciais">
+        <div class="wrap">
+          <ul>
+            <li>
+              <svg class="i" aria-hidden="true"><use href="#cor" /></svg>Nota 5,0 no Google
+            </li>
+            <li>
+              <svg class="i" aria-hidden="true"><use href="#bolo" /></svg>Bolos sob encomenda
+            </li>
+            <li>
+              <svg class="i" aria-hidden="true"><use href="#pin" /></svg>No Tatuapé, São Paulo
+            </li>
+          </ul>
+        </div>
+      </div>
 
-<section class="galeria" id="vitrine">
-  <div class="wrap"><h2>Da vitrine para a sua mesa</h2></div>
-  <div class="trilho">
-    <figure><img src="fotos/morango2.webp" width="520" height="693" loading="lazy" decoding="async" alt="Morango recheado aberto ao meio, segurado na mão"><figcaption>Morango recheado</figcaption></figure>
-    <figure><img src="fotos/embalado.webp" width="520" height="693" loading="lazy" decoding="async" alt="Doce embalado em caixa transparente com adesivo da Cinthiê"><figcaption>Embalado para levar</figcaption></figure>
-    <figure><img src="fotos/fachada.webp" width="520" height="691" loading="lazy" decoding="async" alt="Fachada preta da Cinthiê Confeitaria com balões dourados" style="object-position:50% 30%"><figcaption>A loja, na Cesário Galero</figcaption></figure>
-  </div>
-</section>
-<section class="sobre" id="sobre">
-  <div class="wrap">
-    <div>
-      <h2>Feito com carinho, servido com atenção</h2>
-      <p style="margin-top:1rem">A Cinthiê é uma confeitaria do Tatuapé conhecida pelo atendimento cuidadoso e por doces que não enjoam.</p>
-      <p style="margin-top:1rem"><span class="pend">História da confeitaria em breve</span></p>
-    </div>
-    <img src="fotos/loja.webp" width="560" height="315" loading="lazy" decoding="async" alt="Interior da Cinthiê com vitrine de doces" style="width:100%;height:auto;border-radius:var(--raio);aspect-ratio:16/9;object-fit:cover">
-  </div>
-</section>
+      <section class="produtos" id="doces">
+        <div class="wrap">
+          <h2>O que sai do nosso forno</h2>
+          <p class="intro sub">
+            Alguns dos doces da vitrine. Pergunte pelo cardápio completo no WhatsApp.
+          </p>
+          <div class="grade">
+            <article class="item">
+              <img
+                class="ph"
+                src="fotos/morango.webp"
+                width="480"
+                height="853"
+                loading="lazy"
+                decoding="async"
+                alt="Doce de morango com calda vermelha servido em pote"
+              />
+              <div class="txt">
+                <h3>Doce de morango</h3>
+                <a
+                  class="btn-3"
+                  href="https://wa.me/5511939359449?text=Ol%C3%A1!%20Quero%20encomendar%20o%20Doce%20de%20morango."
+                  >Encomendar →</a
+                >
+              </div>
+            </article>
+            <article class="item">
+              <img
+                class="ph"
+                src="fotos/bombom.webp"
+                width="480"
+                height="624"
+                loading="lazy"
+                decoding="async"
+                alt="Morango inteiro coberto com creme verde, cortado ao meio"
+              />
+              <div class="txt">
+                <h3>Morango recheado</h3>
+                <a
+                  class="btn-3"
+                  href="https://wa.me/5511939359449?text=Ol%C3%A1!%20Quero%20encomendar%20o%20Morango%20recheado."
+                  >Encomendar →</a
+                >
+              </div>
+            </article>
+            <article class="item">
+              <img
+                class="ph"
+                src="fotos/brownie.webp"
+                width="480"
+                height="640"
+                loading="lazy"
+                decoding="async"
+                alt="Fatia de brownie servida em prato branco"
+              />
+              <div class="txt">
+                <h3>Brownie</h3>
+                <a
+                  class="btn-3"
+                  href="https://wa.me/5511939359449?text=Ol%C3%A1!%20Quero%20encomendar%20brownie."
+                  >Encomendar →</a
+                >
+              </div>
+            </article>
+            <article class="item">
+              <img
+                class="ph"
+                src="fotos/vitrine.webp"
+                width="520"
+                height="693"
+                loading="lazy"
+                decoding="async"
+                alt="Bolos caseiros e rosquinha na vitrine refrigerada"
+              />
+              <div class="txt">
+                <h3>Bolos da vitrine</h3>
+                <a
+                  class="btn-3"
+                  href="https://wa.me/5511939359449?text=Ol%C3%A1!%20Quero%20saber%20dos%20bolos%20da%20vitrine."
+                  >Encomendar →</a
+                >
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
 
-<section class="passos" id="pedir">
-  <div class="wrap">
-    <h2 style="font-size:clamp(2rem,1.4rem + 2.6vw,3.2rem);color:var(--cacau);margin-bottom:2rem">Como encomendar</h2>
-    <ol>
-      <li><h3>Chame no WhatsApp</h3><p>Diga o doce, o tamanho e a data.</p></li>
-      <li><h3>Combine os detalhes</h3><p>Sabor, decoração e valor.<span class="nota">Prazo mínimo de encomenda a confirmar</span></p></li>
-      <li><h3>Retire ou receba</h3><p>Retire na loja ou combine a entrega.<span class="nota">Formas de entrega a confirmar</span></p></li>
-    </ol>
-  </div>
-</section>
+      <section class="galeria" id="vitrine">
+        <div class="wrap"><h2>Da vitrine para a sua mesa</h2></div>
+        <div class="trilho">
+          <figure>
+            <img
+              src="fotos/morango2.webp"
+              width="520"
+              height="693"
+              loading="lazy"
+              decoding="async"
+              alt="Morango recheado aberto ao meio, segurado na mão"
+            />
+            <figcaption>Morango recheado</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="fotos/embalado.webp"
+              width="520"
+              height="693"
+              loading="lazy"
+              decoding="async"
+              alt="Doce embalado em caixa transparente com adesivo da Cinthiê"
+            />
+            <figcaption>Embalado para levar</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="fotos/fachada.webp"
+              width="520"
+              height="691"
+              loading="lazy"
+              decoding="async"
+              alt="Fachada preta da Cinthiê Confeitaria com balões dourados"
+              style="object-position: 50% 30%"
+            />
+            <figcaption>A loja, na Cesário Galero</figcaption>
+          </figure>
+        </div>
+      </section>
+      <section class="sobre" id="sobre">
+        <div class="wrap">
+          <div>
+            <h2>Feito com carinho, servido com atenção</h2>
+            <p style="margin-top: 1rem">
+              A Cinthiê é uma confeitaria do Tatuapé conhecida pelo atendimento cuidadoso e por
+              doces que não enjoam.
+            </p>
+            <p style="margin-top: 1rem">
+              <span class="pend">História da confeitaria em breve</span>
+            </p>
+          </div>
+          <img
+            src="fotos/loja.webp"
+            width="560"
+            height="315"
+            loading="lazy"
+            decoding="async"
+            alt="Interior da Cinthiê com vitrine de doces"
+            style="
+              width: 100%;
+              height: auto;
+              border-radius: var(--raio);
+              aspect-ratio: 16/9;
+              object-fit: cover;
+            "
+          />
+        </div>
+      </section>
 
-<section class="final escuro">
-  <div class="wrap">
-    <h2>Tem festa chegando?</h2>
-    <p>Conte para a Cinthiê o que você imagina e receba a proposta pelo WhatsApp.</p>
-    <a class="btn btn-1" href="https://wa.me/5511939359449?text=Ol%C3%A1%2C%20Cinthi%C3%AA!%20Tenho%20uma%20festa%20e%20quero%20encomendar.">Fazer encomenda <span class="bola"><svg class="i" aria-hidden="true"><use href="#wa"/></svg></span></a>
-  </div>
-</section>
-</main>
+      <section class="passos" id="pedir">
+        <div class="wrap">
+          <h2
+            style="
+              font-size: clamp(2rem, 1.4rem + 2.6vw, 3.2rem);
+              color: var(--cacau);
+              margin-bottom: 2rem;
+            "
+          >
+            Como encomendar
+          </h2>
+          <ol>
+            <li>
+              <h3>Chame no WhatsApp</h3>
+              <p>Diga o doce, o tamanho e a data.</p>
+            </li>
+            <li>
+              <h3>Combine os detalhes</h3>
+              <p>
+                Sabor, decoração e valor.<span class="nota"
+                  >Prazo mínimo de encomenda a confirmar</span
+                >
+              </p>
+            </li>
+            <li>
+              <h3>Retire ou receba</h3>
+              <p>
+                Retire na loja ou combine a entrega.<span class="nota"
+                  >Formas de entrega a confirmar</span
+                >
+              </p>
+            </li>
+          </ol>
+        </div>
+      </section>
 
-<footer id="contato">
-  <div class="wrap">
-    <div><p class="marca" style="color:#fff">Cinthiê Confeitaria</p><p>Bolos e doces no Tatuapé.</p></div>
-    <div><h3>Navegação</h3><ul><li><a href="#doces">Doces</a></li><li><a href="#sobre">Sobre</a></li><li><a href="#pedir">Como pedir</a></li></ul></div>
-    <div><h3>Contato</h3><ul><li><a href="https://wa.me/5511939359449">(11) 93935-9449</a></li><li>R. Cesário Galero, 262 – Tatuapé, São Paulo – SP</li><li><span class="pend" style="background:transparent;color:var(--rosa);border-color:var(--rosa)">Horário a confirmar</span></li></ul>
-      <div class="social" style="margin-top:1rem"><a href="#" aria-label="Instagram da Cinthiê (link pendente)"><svg class="i" aria-hidden="true"><use href="#ig"/></svg></a></div></div>
-  </div>
-</footer>
+      <section class="final escuro">
+        <div class="wrap">
+          <h2>Tem festa chegando?</h2>
+          <p>Conte para a Cinthiê o que você imagina e receba a proposta pelo WhatsApp.</p>
+          <a
+            class="btn btn-1"
+            href="https://wa.me/5511939359449?text=Ol%C3%A1%2C%20Cinthi%C3%AA!%20Tenho%20uma%20festa%20e%20quero%20encomendar."
+            >Fazer encomenda
+            <span class="bola"
+              ><svg class="i" aria-hidden="true"><use href="#wa" /></svg></span
+          ></a>
+        </div>
+      </section>
+    </main>
 
-<a class="flutua" href="https://wa.me/5511939359449" aria-label="Falar com a Cinthiê no WhatsApp"><svg aria-hidden="true"><use href="#wa"/></svg></a>
+    <footer id="contato">
+      <div class="wrap">
+        <div>
+          <p class="marca" style="color: #fff">Cinthiê Confeitaria</p>
+          <p>Bolos e doces no Tatuapé.</p>
+        </div>
+        <div>
+          <h3>Navegação</h3>
+          <ul>
+            <li><a href="#doces">Doces</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#pedir">Como pedir</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Contato</h3>
+          <ul>
+            <li><a href="https://wa.me/5511939359449">(11) 93935-9449</a></li>
+            <li>R. Cesário Galero, 262 – Tatuapé, São Paulo – SP</li>
+            <li>
+              <span
+                class="pend"
+                style="background: transparent; color: var(--rosa); border-color: var(--rosa)"
+                >Horário a confirmar</span
+              >
+            </li>
+          </ul>
+          <div class="social" style="margin-top: 1rem">
+            <a href="#" aria-label="Instagram da Cinthiê (link pendente)"
+              ><svg class="i" aria-hidden="true"><use href="#ig" /></svg
+            ></a>
+          </div>
+        </div>
+      </div>
+    </footer>
 
-<script>
-const b=document.querySelector('.menu-btn'),n=document.getElementById('nav');
-const set=v=>{n.classList.toggle('aberto',v);b.setAttribute('aria-expanded',v)};
-b.addEventListener('click',e=>{e.stopPropagation();set(!n.classList.contains('aberto'))});
-document.addEventListener('keydown',e=>{if(e.key==='Escape')set(false)});
-document.addEventListener('click',e=>{if(!n.contains(e.target))set(false)});
-n.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>set(false)));
-</script>
-</body>
+    <a
+      class="flutua"
+      href="https://wa.me/5511939359449"
+      aria-label="Falar com a Cinthiê no WhatsApp"
+      ><svg aria-hidden="true"><use href="#wa" /></svg
+    ></a>
+
+    <script src="js/main.js"></script>
+  </body>
 </html>
